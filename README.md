@@ -1,2 +1,3 @@
-# FaiTerm_doc
-FaiTerm doc and release
+# FaiTerm
+
+A Future AI Terminal Client
