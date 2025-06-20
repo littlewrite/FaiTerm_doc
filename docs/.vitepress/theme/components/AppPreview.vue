@@ -41,6 +41,19 @@ const preview = computed(() => {
 .preview-inner {
     object-fit: cover;
     max-width: 100%;
+    background: var(--preview-bg, #fff);
+    padding: 5px;
+    border-radius: 16px;
+    /* 更深的阴影 */
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.15);
+    display: inline-block;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+/* 暗色模式下，VitePress 会自动加 .dark 到 body */
+.dark .preview-inner {
+    --preview-bg: #23272f;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.45), 0 2px 12px rgba(0,0,0,0.25);
 }
 
 @media (min-width: 640px) {
