@@ -1,4 +1,5 @@
 import {defineConfig} from 'vitepress'
+import { inject } from '@vercel/analytics'
 import {zhConfig} from './config/zh'
 import {enConfig} from './config/en'
 
@@ -39,4 +40,9 @@ export default defineConfig({
             ...zhConfig
         },
     },
+    vite: {
+        plugins: [
+            inject()
+        ]
+    }
 })
