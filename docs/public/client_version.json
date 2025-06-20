@@ -1,0 +1,19 @@
+{
+  "version": "1.2.3",
+  "changelog": {
+    "en": "https://faiterm.com/changelog/v0.0.1.html",
+    "zh": "https://faiterm.com/zh/changelog/v0.0.1.html"
+  },
+  "description": {
+    "en": "",
+    "zh": ""
+  },
+  "download_url": {
+    "en": "",
+    "zh": ""
+  },
+  "download_page": {
+    "en": "https://faiterm.com/",
+    "zh": "https://faiterm.com/zh/"
+  }
+}
