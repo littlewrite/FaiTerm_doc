@@ -1,6 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
-import {h} from "vue"
+import { h } from "vue"
 import Theme from "vitepress/theme"
+import googleAnalytics from 'vitepress-plugin-google-analytics'
 import "./style.css"
 import AppPreview from './components/AppPreview.vue'
 import HeroActions from './components/HeroActions.vue'
@@ -14,7 +15,9 @@ export default {
             'home-hero-after': () => h(AppPreview)
         })
     },
-    enhanceApp({app, router, siteData}) {
-        // ...
+    enhanceApp({ app, router, siteData }) {
+        googleAnalytics({
+            id: 'G-VMYVL3SDX3', // Replace with your GoogleAnalytics ID, which should start with the 'G-'
+        })
     }
 }
