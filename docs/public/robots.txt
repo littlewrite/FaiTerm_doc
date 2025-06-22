@@ -6,8 +6,5 @@ Allow: /
 User-agent: *
 Disallow: /private
 
-# Host
-Host: https://www.faiterm.com
-
 # Sitemaps
 Sitemap: https://www.faiterm.com/sitemap.xml

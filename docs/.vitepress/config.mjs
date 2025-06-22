@@ -11,7 +11,7 @@ export default defineConfig({
         ['link', {rel: 'icon', type: 'image/svg+xml', href: '/images/favicon.png'}],
         ['link', {rel: 'icon', type: 'image/png', href: '/images/appicon.png'}],
         ['script', {async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-VMYVL3SDX3'}],
-        ['script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-PSQQNDPT');`]
+        ['script', {}, `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-VMYVL3SDX3');`]
     ],
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
