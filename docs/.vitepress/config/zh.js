@@ -23,7 +23,7 @@ export const zhConfig = {
             '/zh/changelog/': {base: '/zh/changelog', items: sidebarChangelog(versions)},
         },
         footer: {
-            message: '',
+            message: 'All rights reserved.',
             copyright: 'Copyright © 2025-2026 FaiTerm'
         }
     }
