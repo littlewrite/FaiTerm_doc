@@ -3,7 +3,7 @@
 layout: home
 
 title: FaiTerm
-titleTemplate: Redis桌面管理客户端
+titleTemplate: 面向未来的AI命令终端客户端
 
 hero:
   name: "FaiTerm"
