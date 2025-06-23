@@ -23,8 +23,8 @@ export const zhConfig = {
             '/zh/changelog/': {base: '/zh/changelog', items: sidebarChangelog(versions)},
         },
         footer: {
-            message: '基于GPL-3.0开源许可协议',
-            copyright: 'Copyright © 2023-present Tiny Craft'
+            message: '',
+            copyright: 'Copyright © 2025-2026 FaiTerm'
         }
     }
 }
