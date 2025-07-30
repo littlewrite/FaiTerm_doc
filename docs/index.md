@@ -36,4 +36,7 @@ features:
     details: Get smart suggestions based on your input for faster command entry.
   - title: AI Assistant
     details: Integrated AI Q&A assistant and AI-powered command completion to boost your productivity.
+
 ---
+
+<!-- FeatureShowcase component will be automatically injected here by the theme -->

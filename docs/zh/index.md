@@ -37,4 +37,7 @@ features:
     details: 按照当前用户已输入文字，提供补全建议
   - title: AI 智能助手
     details: 集成 AI 问答助手，AI命令补全，提升效率。
+
 ---
+
+<!-- FeatureShowcase 组件将在这里自动注入 -->
