@@ -19,7 +19,7 @@ const content = {
           "🌙 深色/浅色主题切换", 
           "📱 响应式布局设计"
         ],
-        image: "ui_design"
+        image: "ui"
       },
       {
         icon: "🔧",
@@ -32,7 +32,7 @@ const content = {
           "⚡ 命令自动补全",
           "📚 命令历史记录"
         ],
-        image: "terminal",
+        image: "sug",
         reverse: true
       },
       {
@@ -46,7 +46,7 @@ const content = {
           "📦 批量文件操作",
           "🚀 高速文件传输"
         ],
-        image: "file_management"
+        image: "file"
       },
       {
         icon: "🤖",
@@ -59,7 +59,7 @@ const content = {
           "🔧 运维问题解答",
           "💻 开发辅助功能"
         ],
-        image: "ai_assistant",
+        image: "ai",
         reverse: true
       }
     ]
@@ -77,7 +77,7 @@ const content = {
           "🌙 Dark/Light Theme Toggle",
           "📱 Responsive Layout Design"
         ],
-        image: "ui_design"
+        image: "ui"
       },
       {
         icon: "🔧",
@@ -90,7 +90,7 @@ const content = {
           "⚡ Command Auto-completion",
           "📚 Command History"
         ],
-        image: "terminal",
+        image: "sug",
         reverse: true
       },
       {
@@ -104,7 +104,7 @@ const content = {
           "📦 Batch File Operations",
           "🚀 High-speed File Transfer"
         ],
-        image: "file_management"
+        image: "file"
       },
       {
         icon: "🤖",
@@ -117,7 +117,7 @@ const content = {
           "🔧 Operations Problem Solving",
           "💻 Development Assistance"
         ],
-        image: "ai_assistant",
+        image: "ai",
         reverse: true
       }
     ]
@@ -131,7 +131,7 @@ const currentContent = computed(() => content[lang.value] || content.en)
 const getImagePath = (imageName) => {
   const theme = isDark.value ? 'dark' : 'light'
   const language = lang.value
-  return `/images/screenshots/${theme}_${language}.png`
+  return `/images/screenshots/${imageName}_${theme}.png`
 }
 </script>
 
