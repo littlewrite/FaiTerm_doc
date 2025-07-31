@@ -5,15 +5,7 @@
 ### Install Manually
 
 - For 64-bit installation package, please download `Setup windows_x64 (.exe)`, and double-click to install after downloading.
-- For 64-bit portable edition, please download `Portable windows_x64 (.zip)`, and double-click to install after downloading.
 - For ARM64 installation package, please download `Setup windows_arm64 (.exe)`, and double-click to install after downloading.
-- For ARM64 portable edition, please download `Portable windows_arm64 (.zip)`, and double-click to install after downloading.
-
-::: danger Troubleshooting
-
-If you receive a prompt that you need to install the Webview runtime, but you cannot download it, you may need to download and install the [Webview2 Runtime](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) manually.
-
-:::
 
 ## macOS
 
@@ -33,7 +25,7 @@ Click the `Cancel` button, then go to `Settings -> Privacy & Security` page, cli
 - If you get a pop-up such as "Broken files" after installation, please open `Terminal.app` and execute the following command:
 
 ```bash
-sudo xattr -d com.apple.quarantine /Applications/Tiny\ RDM.app
+sudo xattr -d com.apple.quarantine /Applications/FaiTerm.app
 ```
 
 Then try reopen `FaiTerm`.
@@ -59,8 +51,3 @@ Use `AppImage`:
 chmod u+x faiterm_{version}_linux_amd64.AppImage
 ./faiterm_{version}_linux_amd64.AppImage
 ```
-
-::: danger Troubleshooting
-
-In the latest version of [Webkit2Gtk](https://archlinux.org/packages/extra/x86_64/webkit2gtk) (2.42.0), due to incomplete implementation of DMABUF by Nvidia proprietary drivers, there may be issues with startup failure and crashes. If you encounter a "Segmentation fault" or Pot fails to start, please try adding the environment variable `WEBKIT_DISABLE_DMABUF_RENDERER=1` in `/etc/environment` (or any other place where environment variables can be set) to disable the use of DMABUF.
-:::

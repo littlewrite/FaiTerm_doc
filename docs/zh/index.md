@@ -30,7 +30,7 @@ features:
   - title: 跨桌面平台
     details: 支持Mac/Windows/Linux主流版本系统
     linkText: 下载地址
-    link: https://github.com/tiny-craft/tiny-rdm/releases
+    # link: https://github.com/tiny-craft/tiny-rdm/releases
   - title: 便捷的文件传输与管理
     details: 支持 sz/rz 文件上传与下载, 以及sftp文件管理
   - title: 命令补全

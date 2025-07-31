@@ -5,15 +5,7 @@
 ### 手动下载安装
 
 - 64位安装包请下载 `Setup windows_x64 (.exe)`，下载完成后双击安装即可。
-- 64位便携版请下载 `Portable windows_x64 (.zip)`，下载完成后双击安装即可。
 - ARM64位安装包请下载 `Setup windows_arm64 (.exe)`，下载完成后双击安装即可。
-- ARM64位便携版请下载 `Portable windows_arm64 (.zip)`，下载完成后双击安装即可。
-
-::: danger 故障排除
-
-如运行提示需要安装Webview运行时，但是无法下载，可能需要自行下载安装[Webview2运行时](https://developer.microsoft.com/zh-cn/microsoft-edge/webview2/)
-
-:::
 
 ## macOS
 
@@ -59,9 +51,3 @@ sudo apt-get install ./faiterm_{version}_linux_amd64.deb
 chmod u+x faiterm_{version}_linux_amd64.AppImage
 ./faiterm_{version}_linux_amd64.AppImage
 ```
-
-::: danger 故障排除
-
-在最新版本的 Webkit2Gtk (2.42.0) 中，由于 Nvidia 专有驱动未完全实现 DMABUF，将导致无法启动和崩溃的情况发生，如果遇到 段错误 或 FaiTerm 无法启动的情况，请尝试在 /etc/environment （或者其他设置环境变量的地方）中加入 WEBKIT_DISABLE_DMABUF_RENDERER=1 环境变量关闭 DMABUF 的使用。
-
-:::

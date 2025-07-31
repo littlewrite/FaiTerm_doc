@@ -73,7 +73,7 @@ function sidebarUserGuide() {
                     text: 'Introduction',
                     items: [
                         { text: 'About FaiTerm', link: '/' },
-                        // { text: 'Installation', link: '/installation' },
+                        { text: 'Installation', link: '/installation' },
                     ]
                 },
             ]
