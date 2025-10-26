@@ -54,7 +54,7 @@ const content = {
         subtitle: "AI 驱动的智能体验",
         description: "集成 AI 问答助手和智能命令补全功能，支持 Shell 脚本、运维和开发相关问题的智能解答，大幅提升工作效率。",
         points: [
-          "💡 AI 命令补全",
+          "💡 AI Agent",
           "❓ 智能问答助手",
           "🔧 运维问题解答",
           "💻 开发辅助功能"
@@ -112,7 +112,7 @@ const content = {
         subtitle: "AI-powered Smart Experience",
         description: "Integrated AI Q&A assistant and intelligent command completion supporting Shell scripting, operations, and development-related problem solving to significantly boost productivity.",
         points: [
-          "💡 AI Command Completion",
+          "💡 AI Agent",
           "❓ Smart Q&A Assistant",
           "🔧 Operations Problem Solving",
           "💻 Development Assistance"

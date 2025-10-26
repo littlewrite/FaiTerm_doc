@@ -16,7 +16,7 @@ const preview = computed(() => {
     if (!loaded.value) {
         return ''
     }
-    return `/images/screenshots/${!!isDark.value ? 'dark' : 'light'}_${lang.value}.png`
+    return `/images/screenshots/home_${!!isDark.value ? 'dark' : 'light'}.png`
 })
 </script>
 
