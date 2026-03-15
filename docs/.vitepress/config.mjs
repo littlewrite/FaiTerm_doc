@@ -21,7 +21,7 @@ export default defineConfig({
         sidebar: [],
 
         socialLinks: [
-            {icon: 'discord', link: 'https://discord.gg/VEfzZQZK'},
+            {icon: 'discord', link: 'https://discord.gg/Fek9tdRbcG'},
             {icon: 'twitter', link: 'https://x.com/'}
         ],
         search: {
