@@ -41,8 +41,8 @@ const downloadMenu = computed(() => {
                 },
                 // 你可以后续补充 msix 或绿色版
                 {
-                    text: 'macOS Apple芯片 (.dmg)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-macos-arm64.dmg`,
+                    text: 'macOS (.dmg)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-macos-universal.dmg`,
                     icon: Apple,
                     event: 'download',
                     eventPlatform: 'mac',
@@ -85,8 +85,8 @@ const downloadMenu = computed(() => {
                 },
                 // You can add msix or portable version later
                 {
-                    text: 'macOS Apple Silicon (.dmg)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-macos-arm64.dmg`,
+                    text: 'macOS (.dmg)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-macos-universal.dmg`,
                     icon: Apple,
                     event: 'download',
                     eventPlatform: 'mac',
