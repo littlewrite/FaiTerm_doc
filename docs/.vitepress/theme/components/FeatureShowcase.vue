@@ -131,7 +131,7 @@ const currentContent = computed(() => content[lang.value] || content.en)
 const getImagePath = (imageName) => {
   const theme = isDark.value ? 'dark' : 'light'
   const language = lang.value
-  return `/images/screenshots/${imageName}_${theme}.png`
+  return `/images/screenshots/${imageName}_${theme}.gif`
 }
 </script>
 
