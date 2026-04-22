@@ -81,11 +81,12 @@ function sidebarUserGuide() {
         {
             text: 'Usage and Configuration',
             items: [
-                // { text: 'Connection', link: '/connection' },
-                // { text: 'Key Loading', link: '/key-loading/' },
-                // { text: 'Key Querying', link: '/filter/' },
-                // { text: 'Custom Decoder', link: '/custom-decoder/' },
-                // { text: 'Personalized', link: '/custom-config' }
+                { text: 'Suggestions', link: '/suggestion' },
+                { text: 'SSH', link: '/ssh' },
+                { text: 'AI', link: '/ai' },
+                { text: 'Note', link: '/note' },
+                { text: 'Theme', link: '/theme' },
+                { text: 'Shortcuts', link: '/shortcuts' },
             ]
         },
         {
