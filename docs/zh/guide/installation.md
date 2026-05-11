@@ -62,3 +62,10 @@ sudo apt-get install ./faiterm_{version}_linux_amd64.deb
 chmod u+x faiterm_{version}_linux_amd64.AppImage
 ./faiterm_{version}_linux_amd64.AppImage
 ```
+
+## Android
+
+### 手动下载安装
+
+- ARM64 安装包请选择下载 `android_arm64.apk (.apk)`
+- x86 安装包请选择下载 `android_x86.apk (.apk)`

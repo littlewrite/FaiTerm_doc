@@ -70,6 +70,26 @@ const downloadMenu = computed(() => {
                     eventArch: 'amd64',
                     eventLang: 'zh'
                 },
+                {
+                    text: 'Android arm64 (.apk)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-arm64.apk`,
+                    icon: Linux,
+                    event: 'download',
+                    eventPlatform: 'android',
+                    eventType: 'apk',
+                    eventArch: 'arm64',
+                    eventLang: 'zh'
+                },
+                {
+                    text: 'Android x86_64 (.apk)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-x86_64.apk`,
+                    icon: Linux,
+                    event: 'download',
+                    eventPlatform: 'android',
+                    eventType: 'apk',
+                    eventArch: 'x86_64',
+                    eventLang: 'zh'
+                },
             ]
         default:
             return [
@@ -112,6 +132,26 @@ const downloadMenu = computed(() => {
                     eventPlatform: 'linux',
                     eventType: 'AppImage',
                     eventArch: 'amd64',
+                    eventLang: 'en'
+                },
+                {
+                    text: 'Android arm64 (.apk)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-arm64.apk`,
+                    icon: Linux,
+                    event: 'download',
+                    eventPlatform: 'android',
+                    eventType: 'apk',
+                    eventArch: 'arm64',
+                    eventLang: 'en'
+                },
+                {
+                    text: 'Android x86_64 (.apk)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-x86_64.apk`,
+                    icon: Linux,
+                    event: 'download',
+                    eventPlatform: 'android',
+                    eventType: 'apk',
+                    eventArch: 'x86_64',
                     eventLang: 'en'
                 },
             ]

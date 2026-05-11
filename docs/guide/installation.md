@@ -62,3 +62,10 @@ Use `AppImage`:
 chmod u+x faiterm_{version}_linux_amd64.AppImage
 ./faiterm_{version}_linux_amd64.AppImage
 ```
+
+## Android
+
+### Install Manually
+
+- For the ARM64 package, download `android_arm64.apk (.apk)`
+- For the x86 package, download `android_x86_64.apk (.apk)`
