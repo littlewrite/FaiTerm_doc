@@ -4,6 +4,7 @@ import {useData} from 'vitepress'
 import Windows from './icon/Windows.vue'
 import Apple from './icon/Apple.vue'
 import Linux from './icon/Linux.vue'
+import Android from './icon/Android.vue'
 import {version} from '../../../../package.json'
 
 const {lang} = useData()
@@ -73,7 +74,7 @@ const downloadMenu = computed(() => {
                 {
                     text: 'Android arm64 (.apk)',
                     link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-arm64.apk`,
-                    icon: Linux,
+                    icon: Android,
                     event: 'download',
                     eventPlatform: 'android',
                     eventType: 'apk',
@@ -83,7 +84,7 @@ const downloadMenu = computed(() => {
                 {
                     text: 'Android x86_64 (.apk)',
                     link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-x86_64.apk`,
-                    icon: Linux,
+                    icon: Android,
                     event: 'download',
                     eventPlatform: 'android',
                     eventType: 'apk',
@@ -137,7 +138,7 @@ const downloadMenu = computed(() => {
                 {
                     text: 'Android arm64 (.apk)',
                     link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-arm64.apk`,
-                    icon: Linux,
+                    icon: Android,
                     event: 'download',
                     eventPlatform: 'android',
                     eventType: 'apk',
@@ -147,7 +148,7 @@ const downloadMenu = computed(() => {
                 {
                     text: 'Android x86_64 (.apk)',
                     link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-x86_64.apk`,
-                    icon: Linux,
+                    icon: Android,
                     event: 'download',
                     eventPlatform: 'android',
                     eventType: 'apk',
