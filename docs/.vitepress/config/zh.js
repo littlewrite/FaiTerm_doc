@@ -3,7 +3,7 @@ import path from 'path'
 
 export const META_URL = 'https://faiterm.com'
 export const META_TITLE = 'FaiTerm'
-export const META_DESCRIPTION = '新一代轻量级Redis GUI,直观管理Redis数据库,支持多平台Windows、Mac和Linux系统,安装简单迅速,连接本地及远程Redis,可视化展示键值数据,快速操作键值对,内置控制台直接运行命令,数据浏览备份导出,慢日志查询,新手高级用户首选,大幅提高Redis应用开发效率。'
+export const META_DESCRIPTION = 'FaiTerm 是新一代 AI Terminal 客户端，支持 Windows、Mac、Linux 和 Android，集成本地终端、远程 SSH、文件管理、命令提示、工作笔记、代码片段，AI 助手与 RAG 知识库，适合开发、运维与日常效率办公场景。'
 
 const versions = getAllChangelog()
 
