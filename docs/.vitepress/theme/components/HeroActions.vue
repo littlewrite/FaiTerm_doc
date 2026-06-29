@@ -32,7 +32,7 @@ const downloadMenu = computed(() => {
             return [
                 {
                     text: 'Windows 安装包 (.exe)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-windows-setup.exe`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-windows-setup.exe`,
                     icon: Windows,
                     event: 'download',
                     eventPlatform: 'windows',
@@ -42,8 +42,8 @@ const downloadMenu = computed(() => {
                 },
                 // 你可以后续补充 msix 或绿色版
                 {
-                    text: 'macOS (.dmg)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-macos-universal.dmg`,
+                    text: 'macOS Apple芯片 (.dmg)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-macos-arm64.dmg`,
                     icon: Apple,
                     event: 'download',
                     eventPlatform: 'mac',
@@ -52,8 +52,18 @@ const downloadMenu = computed(() => {
                     eventLang: 'zh'
                 },
                 {
+                    text: 'macOS Intel芯片 (.dmg)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-macos-x64.dmg`,
+                    icon: Apple,
+                    event: 'download',
+                    eventPlatform: 'mac',
+                    eventType: 'dmg',
+                    eventArch: 'x64',
+                    eventLang: 'zh'
+                },
+                {
                     text: 'Linux 64位 deb (.deb)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-linux-amd64.deb`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-linux-amd64.deb`,
                     icon: Linux,
                     event: 'download',
                     eventPlatform: 'linux',
@@ -63,7 +73,7 @@ const downloadMenu = computed(() => {
                 },
                 {
                     text: 'Linux 64位 AppImage (.AppImage)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-linux-amd64.AppImage`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-linux-amd64.AppImage`,
                     icon: Linux,
                     event: 'download',
                     eventPlatform: 'linux',
@@ -73,30 +83,20 @@ const downloadMenu = computed(() => {
                 },
                 {
                     text: 'Android arm64 (.apk)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-arm64.apk`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-android-arm64.apk`,
                     icon: Android,
                     event: 'download',
                     eventPlatform: 'android',
                     eventType: 'apk',
                     eventArch: 'arm64',
                     eventLang: 'zh'
-                },
-                {
-                    text: 'Android x86_64 (.apk)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-x86_64.apk`,
-                    icon: Android,
-                    event: 'download',
-                    eventPlatform: 'android',
-                    eventType: 'apk',
-                    eventArch: 'x86_64',
-                    eventLang: 'zh'
-                },
+                }
             ]
         default:
             return [
                 {
                     text: 'Windows x64 Installer (.exe)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-windows-setup.exe`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-windows-setup.exe`,
                     icon: Windows,
                     event: 'download',
                     eventPlatform: 'windows',
@@ -106,8 +106,8 @@ const downloadMenu = computed(() => {
                 },
                 // You can add msix or portable version later
                 {
-                    text: 'macOS (.dmg)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-macos-universal.dmg`,
+                    text: 'macOS Apple Silicon (.dmg)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-macos-arm64.dmg`,
                     icon: Apple,
                     event: 'download',
                     eventPlatform: 'mac',
@@ -116,8 +116,18 @@ const downloadMenu = computed(() => {
                     eventLang: 'en'
                 },
                 {
+                    text: 'macOS Intel (.dmg)',
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-macos-x64.dmg`,
+                    icon: Apple,
+                    event: 'download',
+                    eventPlatform: 'mac',
+                    eventType: 'dmg',
+                    eventArch: 'x64',
+                    eventLang: 'en'
+                },
+                {
                     text: 'Linux (.deb)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-linux-amd64.deb`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-linux-amd64.deb`,
                     icon: Linux,
                     event: 'download',
                     eventPlatform: 'linux',
@@ -127,7 +137,7 @@ const downloadMenu = computed(() => {
                 },
                 {
                     text: 'Linux (.AppImage)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-linux-amd64.AppImage`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-linux-amd64.AppImage`,
                     icon: Linux,
                     event: 'download',
                     eventPlatform: 'linux',
@@ -137,24 +147,14 @@ const downloadMenu = computed(() => {
                 },
                 {
                     text: 'Android arm64 (.apk)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-arm64.apk`,
+                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-${version}-android-arm64.apk`,
                     icon: Android,
                     event: 'download',
                     eventPlatform: 'android',
                     eventType: 'apk',
                     eventArch: 'arm64',
                     eventLang: 'en'
-                },
-                {
-                    text: 'Android x86_64 (.apk)',
-                    link: `https://github.com/littlewrite/FaiTerm_doc/releases/download/v${version}/faiterm-v${version}-android-x86_64.apk`,
-                    icon: Android,
-                    event: 'download',
-                    eventPlatform: 'android',
-                    eventType: 'apk',
-                    eventArch: 'x86_64',
-                    eventLang: 'en'
-                },
+                }
             ]
     }
 })
