@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>FaiTerm Windows Updates</title>
+    <description>FaiTerm Windows application updates</description>
+    <language>en</language>
+
+    <item>
+      <title>FaiTerm 1.0.8</title>
+      <sparkle:version>1.0.8</sparkle:version>
+      <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+      <pubDate>Fri, 25 Sep 2026 21:03:57 +0800</pubDate>
+      <enclosure
+        url="https://github.com/littlewrite/FaiTerm_doc/releases/download/v1.0.8/faiterm-1.0.8-windows-setup.exe"
+        sparkle:dsaSignature="MD0CHGgkLj2pOX1l2wmPivCzDawfA+y2EUeO2JUkk2ACHQCz7Jsye0Ykqa4/Wj3+mky4Qw2XKLFhUSNK2TX5"
+        length="21181951"
+        type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>

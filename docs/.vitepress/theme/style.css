@@ -142,3 +142,72 @@
     --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/**
+ * Design tokens
+ *
+ * 三个首页自定义板块（FeatureShowcase / DownloadSection / FAQSection）共用这一套值。
+ * 改这里即可全局统一，不要再往组件里写裸数值。
+ * -------------------------------------------------------------------------- */
+
+:root {
+    /* 圆角：卡片 / 卡片内元素 / 胶囊按钮 */
+    --ft-radius-card: 16px;
+    --ft-radius-inner: 10px;
+    --ft-radius-pill: 20px;
+
+    /* 字号阶梯（5 级，收敛自原先散落的 7 种） */
+    --ft-title-size: 2.5rem;      /* 板块标题 */
+    --ft-title-size-sm: 1.8rem;   /* 板块标题（窄屏） */
+    /* 板块标题行高。必须显式给：VitePress 的 base.css 对所有 h1–h6 设了
+       `line-height: 24px`，而板块标题字号是 2.5rem(40px)，行框比字形矮 16px；
+       三个板块标题又是 background-clip: text + 透明文字色，溢出 24px 行框的
+       字形没有背景可画，会被整条抠掉 —— 表现为标题上下被裁。改标题字号时
+       这个值要跟着复核（1.3 是 CJK 的安全余量，1.25 也够，再小就有风险）。 */
+    --ft-title-line-height: 1.3;
+    --ft-heading-size: 1.5rem;    /* 大卡片标题 */
+    --ft-card-title-size: 1.05rem;/* 紧凑卡片标题 */
+    --ft-body-size: 0.95rem;      /* 正文 */
+    --ft-meta-size: 0.85rem;      /* 次要信息 / 说明 */
+
+    /* 板块间距：三个板块必须一致，否则内容左右边缘会对不齐 */
+    --ft-section-max: 1200px;
+    --ft-section-padding: 4rem 24px;
+    --ft-section-padding-sm: 2.5rem 16px;
+
+    /* 图标底片 */
+    --ft-icon-chip: 36px;
+
+    /* 品牌色透明叠加。--vp-c-brand-soft 在本站是不透明的 #FF6B6B，
+       当底色会过于抢眼并让深色文字难辨，故单独定义。 */
+    --ft-tint: rgba(231, 69, 60, 0.1);
+}
+
+/**
+ * Component: Section eyebrow
+ *
+ * 章节标签，用于自定义板块（FeatureShowcase / DownloadSection / FAQSection）
+ * 制造章节节奏感，用法：<p class="section-eyebrow">核心能力</p>
+ * -------------------------------------------------------------------------- */
+
+.section-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 16px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--vp-c-brand-1);
+}
+
+.section-eyebrow::before,
+.section-eyebrow::after {
+    content: "";
+    width: 28px;
+    height: 1px;
+    flex: none;
+    background: currentColor;
+    opacity: 0.45;
+}
+

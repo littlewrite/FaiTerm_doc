@@ -43,7 +43,7 @@ const preview = computed(() => {
     max-width: 100%;
     background: var(--preview-bg, #fff);
     padding: 5px;
-    border-radius: 16px;
+    border-radius: var(--ft-radius-card);
     /* 更深的阴影 */
     box-shadow: 0 8px 32px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.15);
     display: inline-block;

@@ -57,7 +57,7 @@
   width: 220px;
   max-width: 60vw;
   display: block;
-  border-radius: 12px;
+  border-radius: var(--ft-radius-inner);
   border: 1px solid var(--vp-c-divider);
   background: var(--vp-c-bg);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);

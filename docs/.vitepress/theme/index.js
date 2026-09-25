@@ -6,6 +6,9 @@ import "./style.css"
 import AppPreview from './components/AppPreview.vue'
 import HeroActions from './components/HeroActions.vue'
 import FeatureShowcase from './components/FeatureShowcase.vue'
+import DownloadSection from './components/DownloadSection.vue'
+import FAQSection from './components/FAQSection.vue'
+import CTASection from './components/CTASection.vue'
 import QQEntry from './components/QQEntry.vue'
 
 export default {
@@ -15,7 +18,12 @@ export default {
             // https://vitepress.dev/guide/extending-default-theme#layout-slots
             'home-hero-actions-after': () => h(HeroActions),
             'home-hero-after': () => h(AppPreview),
-            'home-features-after': () => h(FeatureShowcase),
+            'home-features-after': () => [
+                h(FeatureShowcase),
+                h(DownloadSection),
+                h(FAQSection),
+                h(CTASection)
+            ],
             'nav-bar-content-after': () => h(QQEntry)
         })
     },
