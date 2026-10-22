@@ -5,6 +5,7 @@ import LayoutIcon from './icon/Layout.vue'
 import TerminalIcon from './icon/Terminal.vue'
 import FolderTransferIcon from './icon/FolderTransfer.vue'
 import SparkleIcon from './icon/Sparkle.vue'
+import MonitorIcon from './icon/Monitor.vue'
 
 const { isDark, lang } = useData()
 
@@ -19,52 +20,69 @@ const content = {
     features: [
       {
         icon: LayoutIcon,
-        title: "现代化界面设计",
-        description: "采用现代化的玻璃拟态设计风格，提供深色和浅色两种主题模式。界面简洁直观，为用户带来舒适的视觉体验。",
+        title: "工作区与界面",
+        description: "四栏工作区：工具轨道、列表栏、工作区、工具集合。分栏宽度可拖拽、面板可收起，内置 11 套应用主题与浅色 / 深色 / 跟随系统三种模式，并支持亚克力半透明窗口与启动恢复上次工作区。",
         points: [
-          "玻璃拟态效果",
-          "深色/浅色主题切换",
-          "响应式布局设计"
+          "四栏可拖拽布局",
+          "11 套应用主题与深浅模式",
+          "亚克力半透明窗口",
+          "启动恢复上次工作区"
         ],
-        image: "ui"
+        image: "ui",
+        ext: "png"
       },
       {
         icon: TerminalIcon,
-        title: "本地与远程终端",
-        description: "支持本地终端操作和远程服务器管理，提供多标签页、命令历史、自动补全等功能，让终端操作更加高效。",
+        title: "终端与多协议连接",
+        description: "本地终端与远程连接在同一个界面里管理：SSH、SFTP、Telnet、FTP、串口统一成一份主机列表，粘贴连接命令即可自动识别协议并填充。600+ 常用命令补全、终端文本高亮、快捷命令、端口转发与 tmux 工具条一应俱全。",
         points: [
-          "多标签页终端",
-          "SSH 远程连接",
-          "命令自动补全",
-          "命令历史记录"
+          "SSH / SFTP / Telnet / FTP / 串口",
+          "600+ 命令补全与子命令提示",
+          "终端文本高亮（支持自定义规则）",
+          "多标签页、分屏与终端内端口转发"
         ],
         image: "sug",
+        ext: "png",
         reverse: true
       },
       {
         icon: FolderTransferIcon,
         title: "文件传输与管理",
-        description: "集成 SFTP 文件管理和 sz/rz 文件传输功能，支持可视化文件浏览、拖拽操作和批量处理，让文件管理变得简单高效。",
+        description: "内置 SFTP 双栏文件管理（本地 ↔ 远端），支持拖拽上传下载、批量操作与传输队列；ZModem（sz / rz）可以在终端里直接收发文件，传输进度在 Dock / 任务栏同步显示，失败时自动清理残留文件。",
         points: [
-          "可视化文件浏览",
-          "拖拽上传/下载",
-          "批量文件操作",
-          "高速文件传输"
+          "本地 ↔ 远端双栏文件管理",
+          "拖拽上传 / 下载",
+          "传输队列与完成提醒",
+          "sz / rz（ZModem）终端内收发"
         ],
         image: "file"
       },
       {
         icon: SparkleIcon,
-        title: "AI 智能助手",
-        description: "集成 AI 问答助手和智能命令补全功能，支持 Shell 脚本、运维和开发相关问题的智能解答，大幅提升工作效率。",
+        title: "AI Agent 与知识库",
+        description: "Ask 问答与 Agent 任务两种模式，Agent 可绑定一个已连接的终端自动执行命令；支持 OpenAI、Anthropic、Gemini、DeepSeek、Kimi、Qwen、GLM、MiniMax、Ollama 以及任意 OpenAI 兼容端点，并可接入本地 MCP 工具与笔记知识库检索。",
         points: [
-          "AI Agent",
-          "智能问答助手",
-          "运维问题解答",
-          "开发辅助功能"
+          "Ask / Agent 双模式",
+          "危险命令审批、黑名单与执行上限",
+          "会话历史：搜索、详情、导出、重发",
+          "知识库检索（RAG）与 MCP 外部工具"
         ],
         image: "ai",
+        ext: "png",
         reverse: true
+      },
+      {
+        icon: MonitorIcon,
+        title: "主机工具与监控",
+        description: "针对当前连接的主机，直接查看进程、服务、Docker、tmux、计划任务与端口占用；资源监控面板给出 CPU、内存、磁盘与网络的实时曲线，本地与远端主机同样可用。",
+        points: [
+          "进程 / 服务 / Docker / tmux",
+          "计划任务与端口占用",
+          "CPU / 内存 / 磁盘 / 网络曲线",
+          "跟随当前终端切换主机"
+        ],
+        image: "host",
+        ext: "png"
       }
     ]
   },
@@ -74,52 +92,70 @@ const content = {
     features: [
       {
         icon: LayoutIcon,
-        title: "Modern UI Design",
-        description: "Adopts modern glassmorphism design style with dark and light theme modes. Clean and intuitive interface provides a comfortable visual experience.",
+        title: "Workspace & UI",
+        description: "A four-pane workspace: tool rail, list column, workspace and tool collection. Panes are resizable and collapsible, with 11 app themes plus light / dark / follow-system modes, acrylic translucency and restore-last-workspace on launch.",
         points: [
-          "Glassmorphism Effects",
-          "Dark/Light Theme Toggle",
-          "Responsive Layout Design"
+          "Resizable four-pane layout",
+          "11 app themes, light & dark",
+          "Acrylic translucent window",
+          "Restore last workspace on launch"
         ],
-        image: "ui"
+        image: "ui",
+        ext: "png"
       },
       {
         icon: TerminalIcon,
-        title: "Local & Remote Terminal",
-        description: "Supports local terminal operations and remote server management with multi-tab, command history, and auto-completion features for efficient terminal operations.",
+        title: "Terminal & Multi-Protocol Connections",
+        description: "Local terminals and remote connections live in one place: SSH, SFTP, Telnet, FTP and serial share a single host list, and pasting a connection command fills in the right protocol automatically. 600+ completions, terminal highlighting, quick commands, port forwarding and a tmux toolbar.",
         points: [
-          "Multi-tab Terminal",
-          "SSH Remote Connection",
-          "Command Auto-completion",
-          "Command History"
+          "SSH / SFTP / Telnet / FTP / Serial",
+          "600+ completions with subcommands",
+          "Terminal highlighting with custom rules",
+          "Tabs, splits and in-terminal port forwarding"
         ],
         image: "sug",
+        ext: "png",
         reverse: true
       },
       {
         icon: FolderTransferIcon,
         title: "File Transfer & Management",
-        description: "Integrated SFTP file management and sz/rz file transfer with visual file browsing, drag-and-drop operations, and batch processing for simple and efficient file management.",
+        description: "Built-in dual-pane SFTP manager (local ↔ remote) with drag-and-drop, batch operations and a transfer queue; ZModem (sz / rz) sends and receives files right inside the terminal, with progress mirrored to the Dock / taskbar and leftover files cleaned up on failure.",
         points: [
-          "Visual File Browser",
-          "Drag & Drop Upload/Download",
-          "Batch File Operations",
-          "High-speed File Transfer"
+          "Dual-pane local ↔ remote manager",
+          "Drag & drop upload / download",
+          "Transfer queue and finish alerts",
+          "sz / rz (ZModem) inside the terminal"
         ],
-        image: "file"
+        image: "file",
+        ext: "png"
       },
       {
         icon: SparkleIcon,
-        title: "AI Smart Assistant",
-        description: "Integrated AI Q&A assistant and intelligent command completion supporting Shell scripting, operations, and development-related problem solving to significantly boost productivity.",
+        title: "AI Agent & Knowledge Base",
+        description: "Ask and Agent modes — an Agent can bind to a connected terminal and run commands for you. Works with OpenAI, Anthropic, Gemini, DeepSeek, Kimi, Qwen, GLM, MiniMax, Ollama or any OpenAI-compatible endpoint, plus local MCP tools and knowledge-base retrieval.",
         points: [
-          "AI Agent",
-          "Smart Q&A Assistant",
-          "Operations Problem Solving",
-          "Development Assistance"
+          "Ask / Agent modes",
+          "Approvals, command blacklist and run limits",
+          "History: search, detail, export, re-run",
+          "RAG knowledge base and MCP tools"
         ],
         image: "ai",
+        ext: "png",
         reverse: true
+      },
+      {
+        icon: MonitorIcon,
+        title: "Host Tools & Monitoring",
+        description: "Inspect processes, services, Docker, tmux, scheduled tasks and listening ports on the host behind the current terminal; the monitor pane charts CPU, memory, disk and network in real time, for local and remote hosts alike.",
+        points: [
+          "Processes / services / Docker / tmux",
+          "Scheduled tasks and listening ports",
+          "CPU / memory / disk / network charts",
+          "Follows the current terminal's host"
+        ],
+        image: "host",
+        ext: "png"
       }
     ]
   }
@@ -129,9 +165,10 @@ const content = {
 const currentContent = computed(() => content[lang.value] || content.en)
 
 // 生成图片路径
-const getImagePath = (imageName) => {
+const getImagePath = (feature) => {
   const theme = isDark.value ? 'dark' : 'light'
-  return `/images/screenshots/${imageName}_${theme}.gif`
+  const ext = feature.ext || 'gif'
+  return `/images/screenshots/${feature.image}_${theme}.${ext}`
 }
 </script>
 
@@ -161,7 +198,7 @@ const getImagePath = (imageName) => {
         </div>
         <div class="feature-image">
           <img
-            :src="getImagePath(feature.image)"
+            :src="getImagePath(feature)"
             :alt="feature.title"
             class="theme-aware-image"
           />

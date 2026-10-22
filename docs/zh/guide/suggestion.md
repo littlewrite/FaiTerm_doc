@@ -1,18 +1,32 @@
 
 # 命令补全
 
-输入部分命令，给出可能命令推荐。
+输入一部分命令，就会弹出候选；输入完整命令后，会继续给出这个命令的子命令与参数。
 
-输入完整命令后，会给出这个命令的子命令，以及参数。
+![命令补全](/images/screenshots/sug_light.png)
 
-收集600+常用的命令，默认开启，支持本地，ssh环境。
+- 内置 600+ 常用命令，默认开启
+- 补全本地与 SSH 环境都可用
+- 候选里包含**历史命令**与**别名说明**：列表里会标注「历史建议」或「Alias for …」，一眼能分清来源
+- 路径补全按平台处理分隔符（Windows / Unix），拼接结果不会多一个或少一个斜杠
+- 候选是分帧推送的，不用等全部算完才显示
 
-<img src="/images/screenshots/sug_dark.gif" width="600" alt="Example of exact matching" />
+## 手动请求建议
 
-> windows环境下支持 powershell, bash.exe 等。 cmd.exe 不支持。
+按 `⌘J`（可在 设置 → 快捷键 里改）主动请求当前输入的建议。
 
-> ssh 模式下，推荐功能的UI渲染会受到网络影响，可能会出现不跟手的情况
+## 快捷键
 
-如果功能异常，可在这里关闭
+弹出候选时：`Tab` 选择，`↑` `↓` 切换，`Esc` 关闭。
 
-<img src="/images/screenshots/off_auto_complete.png" width="500" alt="Example of exact matching" />
+## 平台与网络说明
+
+> Windows 环境下支持 powershell、bash.exe 等；cmd.exe 不支持。
+
+> SSH 模式下，候选的渲染速度会受网络影响，可能出现不跟手的情况。
+
+## 关闭补全
+
+如果补全干扰了你的输入，可以在 设置 → 终端 里关闭。
+
+![关闭补全](/images/screenshots/off_auto_complete.png)

@@ -1,16 +1,38 @@
 
 # 主题
 
-支持 light，dark 两种主题，也可选择跟随系统
+设置 → 主题 里有三块：应用主题、背景设置、终端主题。**应用主题和终端配色是两套独立的东西**，可以各自选。
 
-# 亚克力半透效果
+![应用主题](/images/screenshots/ui_light.png)
 
-acrylic 玻璃效果，默认不开，可手动在 `Settings` 的 `General` 中找到 `Enable acrylic effect` 开关并启用。
+## 应用主题
 
-<img src="/images/screenshots/enable_acrylic.png" width="600" alt="Example of exact matching" />
+- 内置 11 套配色：VSCode Modern（默认）、VSCode 2026、Visual Studio、VSCode+、VSCode Solarized、Geek Blue、Forest、Violet、Pink、Ash、Eyecare Yellow
+- 颜色模式：浅色 / 深色 / 跟随系统
+- 每套配色都给出浅色与深色两种预览，方便对照
 
-# 终端主题
+## 亚克力半透明效果
 
-对于 terminal 内的文字渲染，提供了多种主题选择。
+桌面的窗口半透效果，默认关闭。在 设置 → 主题 里打开「启用亚克力特效」即可（Windows / Linux 上可能不稳定；移动端会保存这份设置但不会直接呈现）。
 
-<img src="/images/screenshots/terminal_theme.png" width="600" alt="Example of exact matching" />
+![亚克力](/images/screenshots/enable_acrylic.png)
+
+## 背景设置
+
+- 选择背景图片（本地保存），图片渲染在整个工作区之后
+- 背景显示方式：铺满（保持比例）/ 拉伸（填充屏幕）
+- 蒙版不透明度：让背景图更安静，不影响文字对比度
+
+## 终端主题
+
+终端配色内置 **600+ 套**（来自 iTerm2-Color-Schemes 的终端方案），并按「族」组织：一族 = 浅色 + 深色两套，选中后终端会**跟着应用的明暗自动取一套**，不用手动切两遍。
+
+![终端主题](/images/screenshots/tterm_light.png)
+
+- 顶部是实时预览：用当前终端主题渲染一段真实输出
+- 列表可搜索（支持按名字过滤），卡片上的深色 / 浅色 chip 是**临时预览**，不影响你真正选中的方案
+- 终端背景色会真的画出来：有自定义背景图或开了亚克力时保持透明，其余情况用主题自己的背景色
+
+## 终端字体
+
+同一页面下面还有终端字体、字号与字符间距。字号也可以随时用 `⌘=` / `⌘-` 调整。

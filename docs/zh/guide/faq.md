@@ -49,6 +49,33 @@ sudo xattr -dr com.apple.quarantine /Applications/FaiTerm.app
 
 详见 [隐私政策](/zh/guide/privacy)。
 
+## 升级后我的主机不见了？
+
+`v1.0.9` 起主机与分组换成了新的存储结构（ObjectBox），**不会迁移旧版本 SQLite 里保存的主机与分组**。如果你从更早的版本升级，请先在旧版本里备份主机信息，再在新版本里重新导入或添加。
+
+详见 [连接与主机](/zh/guide/ssh)。
+
+## AI 需要自己准备 API Key 吗？
+
+需要。FaiTerm 不内置任何模型额度，你在 设置 → AI 里填自己的服务商与 Key（OpenAI、Anthropic、Gemini、DeepSeek、Kimi、Qwen、GLM、MiniMax、Ollama 或任意 OpenAI 兼容端点），可以「测试连接」确认配置是否可用。
+
+另外要提醒一句：**AI 只有在绑定了终端时才会执行命令**（绑定了终端就是 Agent 模式，没绑定就是 Ask 模式）；Ask 只回答、不碰你的环境。
+
+详见 [AI Agent](/zh/guide/ai)。
+
+## 为什么 Docker 面板提示需要管理员权限？
+
+在 macOS 上通过 `docker` 命令行访问 Docker 需要 `sudo` 或者已经加入 `docker` 用户组；面板会把这个提示原样显示出来。你可以：
+
+- 先给当前用户添加 Docker 的免密权限，或在终端里确认 `docker ps` 可以正常工作
+- 也可以直接切到对应主机上排查
+
+## 主机工具面板一直是空白？
+
+主机工具与监控都**跟随当前终端的主机**：请先在 ③ 工作区里选中一台已连接主机的终端，再打开 ④ 工具集合里的工具。连接断开时面板会给出状态提示，重连后会自动刷新。
+
+详见 [主机工具与监控](/zh/guide/host-tools)。
+
 ## 还有别的疑问？
 
 欢迎加入 QQ 群（页面右上角图标）或到 [GitHub 仓库](https://github.com/littlewrite/FaiTerm_doc) 提 issue。

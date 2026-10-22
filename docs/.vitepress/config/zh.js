@@ -82,26 +82,57 @@ function sidebarUserGuide() {
         {
             text: '简介',
             items: [
-                {text: '关于FaiTerm', link: '/'},
+                {text: '关于 FaiTerm', link: '/'},
                 {text: '安装使用', link: '/installation'},
+                {text: '界面与工作区', link: '/workspace'},
             ]
         },
         {
-            text: '用法和配置',
+            text: '连接与文件',
             items: [
-                { text: '智能补全', link: '/suggestion' },
-                { text: 'SSH', link: '/ssh' },
-                { text: 'AI助手', link: '/ai' },
-                { text: '知识库', link: '/note' },
-                { text: '主题', link: '/theme' },
-                { text: '快捷键', link: '/shortcuts' },
+                {text: '连接与主机', link: '/ssh'},
+                {text: '文件传输与管理', link: '/files'},
+                {text: '密钥与凭据', link: '/secrets'},
+                {text: '端口转发', link: '/port-forward'},
             ]
         },
         {
-            text: '其他',
+            text: '终端',
             items: [
+                {text: '命令补全', link: '/suggestion'},
+                {text: '终端高亮', link: '/highlight'},
+                {text: '快捷命令与命令历史', link: '/quick-commands'},
+                {text: '通知', link: '/notifications'},
+            ]
+        },
+        {
+            text: 'AI 与知识库',
+            items: [
+                {text: 'AI Agent', link: '/ai'},
+                {text: '笔记本与知识库', link: '/note'},
+            ]
+        },
+        {
+            text: '主机与监控',
+            items: [
+                {text: '主机工具与监控', link: '/host-tools'},
+            ]
+        },
+        {
+            text: '个性化与账号',
+            items: [
+                {text: '主题', link: '/theme'},
+                {text: '快捷键', link: '/shortcuts'},
+                {text: '个性化配置', link: '/custom-config'},
+                {text: '账号与数据同步', link: '/sync'},
+            ]
+        },
+        {
+            text: '移动端与帮助',
+            items: [
+                {text: '移动端', link: '/mobile'},
                 {text: '常见问题', link: '/faq'},
-                {text: '隐私政策', link: '/privacy'}
+                {text: '隐私政策', link: '/privacy'},
             ]
         }
     ]

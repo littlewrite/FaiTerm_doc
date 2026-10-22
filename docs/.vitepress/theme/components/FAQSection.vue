@@ -24,7 +24,11 @@ const content = {
       },
       {
         q: 'AI 助手会自动执行命令吗？',
-        a: '取决于模式。对话模式下 AI 只回答问题、不碰你的环境；选择 auto 模式后，AI 会分析你的请求并尝试在你的环境里执行命令。',
+        a: '取决于模式。不绑定终端就是 Ask 模式，AI 只回答问题、不碰你的环境；绑定一台已连接的终端就是 Agent 模式，AI 会分析你的请求并在你的环境里执行命令——每条调用都可以逐条审批，高危命令会被硬拦截。',
+      },
+      {
+        q: '升级后我的主机不见了？',
+        a: '从 v1.0.9 起主机与分组改用新的存储结构（ObjectBox），不会迁移旧版本 SQLite 里保存的主机与分组。升级前请先备份，或在新版本里重新导入、添加。',
       },
       {
         q: '命令补全支持哪些环境？',
@@ -54,7 +58,11 @@ const content = {
       },
       {
         q: 'Does the AI assistant run commands on its own?',
-        a: 'It depends on the mode. In chat mode the AI only answers questions and never touches your environment. In auto mode it analyses your request and attempts to run commands in your environment.',
+        a: 'It depends on the mode. With no terminal bound it runs in Ask mode and only answers questions. Bind a connected terminal and it becomes Agent mode: it analyses your request and runs commands in your environment, where every call can be approved and high-risk commands are blocked outright.',
+      },
+      {
+        q: 'My hosts disappeared after upgrading?',
+        a: 'From v1.0.9 the host list and its groups use a new store (ObjectBox). Hosts saved in the old SQLite database are not migrated — back up first, or simply re-import / re-add them in the new version.',
       },
       {
         q: 'Where does command completion work?',
