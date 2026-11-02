@@ -6,14 +6,14 @@
     <language>en</language>
 
     <item>
-      <title>FaiTerm 1.0.9</title>
-      <sparkle:version>1.0.9</sparkle:version>
-      <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
-      <pubDate>Fri, 23 Oct 2026 00:09:11 +0800</pubDate>
+      <title>FaiTerm 1.0.10</title>
+      <sparkle:version>1.0.10+1.0.10</sparkle:version>
+      <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
+      <pubDate>Mon, 02 Nov 2026 12:13:20 +0800</pubDate>
       <enclosure
-        url="https://github.com/littlewrite/FaiTerm_doc/releases/download/v1.0.9/faiterm-1.0.9-windows-setup.exe"
-        sparkle:dsaSignature="MD0CHEBteJHXbijOEPnvkocTFIopN6T8TenpbCOmhU4CHQCGDAPGoYMFiGYymLEQ1m3PBySqUuLs0k2fi8J+"
-        length="20181065"
+        url="https://github.com/littlewrite/FaiTerm_doc/releases/download/v1.0.10/faiterm-1.0.10-windows-setup.exe"
+        sparkle:dsaSignature="MD4CHQCH52lUzqvgdmQETNngUecgAp63VURM1900g3KfAh0Au00KeSSz1QHxXP4vRE3HDOdcKc8m14Fw0oUIPw=="
+        length="20207374"
         type="application/octet-stream" />
     </item>
   </channel>

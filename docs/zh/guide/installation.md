@@ -4,8 +4,9 @@
 
 ### 手动下载安装
 
-- 64位安装包请下载 `Setup windows_x64 (.exe)`，下载完成后双击安装即可。
-- ARM64位安装包请下载 `Setup windows_arm64 (.exe)`，下载完成后双击安装即可。
+- 下载 `faiterm-{version}-windows-setup.exe`，完成后双击安装即可。
+
+Windows 本地终端可以运行普通 Shell，也可以选择 WSL 发行版，详见 [连接与主机](/zh/guide/ssh#本地终端与-wsl)。
 
 ## macOS
 
@@ -49,23 +50,22 @@ sudo xattr -dr com.apple.quarantine /Applications/FaiTerm.app
 
 ### 手动下载安装
 
-- `deb`安装包选择下载 `linux_amd64.deb (.deb)`
-- `AppImage`包选择下载 `linux_amd64.AppImage (.AppImage)`
+- Debian / Ubuntu 下载 `faiterm-{version}-linux-amd64.deb`
+- 通用免安装版下载 `faiterm-{version}-linux-amd64.AppImage`
 
 `deb` 安装使用 `apt-get`
 ```bash
-sudo apt-get install ./faiterm_{version}_linux_amd64.deb
+sudo apt-get install ./faiterm-{version}-linux-amd64.deb
 ```
 
 `AppImage`的使用
 ```bash
-chmod u+x faiterm_{version}_linux_amd64.AppImage
-./faiterm_{version}_linux_amd64.AppImage
+chmod u+x faiterm-{version}-linux-amd64.AppImage
+./faiterm-{version}-linux-amd64.AppImage
 ```
 
 ## Android
 
 ### 手动下载安装
 
-- ARM64 安装包请选择下载 `android_arm64.apk (.apk)`
-- x86 安装包请选择下载 `android_x86.apk (.apk)`
+- 下载 `faiterm-{version}-android-arm64.apk`。

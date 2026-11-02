@@ -1,17 +1,50 @@
 
-# AI
+# AI Agent
 
-Click the **▼** menu in the top-right corner to open **AI Chat**.
+AI Chat is the first tool in the right-side tool collection. On macOS, its default shortcut is `⇧⌘K`.
 
-<img src="/images/screenshots/open_ai_chat.png" width="600" alt="Open AI Chat" />
+![AI chat](/images/screenshots/ai_light.png)
 
-## Ask mode
+## Ask and Agent modes
 
-Ask mode is the simplest option: you ask questions and the AI answers, without running anything on your machine.
+**Ask** answers questions without touching your environment. It is useful for research, code explanation, and command help.
 
-## Agent mode
+**Agent** requires an already connected terminal. Once a terminal is selected, the AI can analyze your request and run tools against it. Command results appear as cards in the conversation and can be approved individually.
 
-Agent mode requires binding a connected terminal first. Once bound, the AI analyzes your request and may run commands in your environment, for example:
+The context selector is also the mode switch: no terminal means Ask; a terminal means Agent.
 
-<img src="/images/screenshots/ai_dark.gif" width="600" alt="Agent running commands" />
+## Providers and models
+
+Add or edit providers and models under **Settings → AI**, refresh the available models, and use **Test connection**. Supported options include OpenAI, Anthropic, Gemini, DeepSeek, Kimi, Qwen, GLM, MiniMax, Ollama, and OpenAI-compatible endpoints.
+
+You can switch the current model from the model selector in the conversation.
+
+## Safety controls
+
+| Approval mode | Behavior |
+| --- | --- |
+| Confirm every command | Ask before each command. |
+| Smart approval | Automatically allow known read-only commands; confirm writes and unknown commands. |
+| Fully automatic | Stop prompting for each command, while still blocking dangerous commands. |
+
+Additional safeguards include a per-run command limit and the terminal command denylist. Matching commands always require confirmation, even in automatic mode.
+
+## Context
+
+Context is explicit and removable:
+
+- Attachments: text files and images
+- Read-only tabs
+- Notebook knowledge-base search
+- The terminal selected for Agent mode
+
+## Conversation history
+
+- Search by title, inspect details, export Markdown, or start a new conversation from an existing one.
+- History stores redacted summaries rather than raw command output and reasoning.
+- A title is generated after each completed run.
+
+## MCP tools
+
+Local stdio MCP servers can be connected under **Settings → AI → External Tools**, allowing AI to use tools you provide.
 

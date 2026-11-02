@@ -31,7 +31,13 @@ It depends on the mode:
 - **Ask mode** — the AI only answers questions and never touches your environment
 - **Agent mode** — with a terminal bound, the AI analyses your request and attempts to run commands in your environment
 
-See [AI assistant](/guide/ai) for details.
+See [AI Agent](/guide/ai) for details.
+
+## Can I open a WSL terminal?
+
+Yes, in FaiTerm for Windows. Enable **Use WSL** in a local host and choose a distribution. WSL currently provides terminal access only, so it cannot be opened from macOS or Android; the mobile app can still display the host and its saved configuration without rewriting it.
+
+See [Connections and Hosts](/guide/ssh#local-terminal-and-wsl).
 
 ## Where does command completion work?
 
@@ -40,6 +46,12 @@ See [AI assistant](/guide/ai) for details.
 - Over SSH the completion UI is affected by network latency and may feel sluggish
 
 You can turn it off in settings if it gets in the way. See [Command completion](/guide/suggestion).
+
+## My hosts disappeared after upgrading
+
+Starting with v1.0.9, hosts and groups use a new storage layout. Hosts stored by older versions in SQLite are not migrated automatically. Before upgrading from an older release, export or record important host details, then import or re-add them.
+
+See [Connections and Hosts](/guide/ssh).
 
 ## Does FaiTerm collect my server data?
 

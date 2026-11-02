@@ -34,11 +34,11 @@ const content = {
       {
         icon: TerminalIcon,
         title: "终端与多协议连接",
-        description: "本地终端与远程连接在同一个界面里管理：SSH、SFTP、Telnet、FTP、串口统一成一份主机列表，粘贴连接命令即可自动识别协议并填充。600+ 常用命令补全、终端文本高亮、快捷命令、端口转发与 tmux 工具条一应俱全。",
+        description: "本地终端与远程连接在同一个界面里管理：Windows 可直接运行 WSL 发行版，SSH、SFTP、Telnet、FTP、串口统一成一份主机列表，粘贴连接命令即可自动识别协议并填充。Shell 集成、600+ 常用命令补全、终端文本高亮、快捷命令、端口转发与 tmux 工具条一应俱全。",
         points: [
-          "SSH / SFTP / Telnet / FTP / 串口",
+          "Windows WSL 与 SSH / SFTP / Telnet / FTP / 串口",
           "600+ 命令补全与子命令提示",
-          "终端文本高亮（支持自定义规则）",
+          "Shell 集成与可点击文件路径",
           "多标签页、分屏与终端内端口转发"
         ],
         image: "sug",
@@ -106,11 +106,11 @@ const content = {
       {
         icon: TerminalIcon,
         title: "Terminal & Multi-Protocol Connections",
-        description: "Local terminals and remote connections live in one place: SSH, SFTP, Telnet, FTP and serial share a single host list, and pasting a connection command fills in the right protocol automatically. 600+ completions, terminal highlighting, quick commands, port forwarding and a tmux toolbar.",
+        description: "Local terminals and remote connections live in one place, including WSL distributions on Windows. SSH, SFTP, Telnet, FTP and serial share a single host list, and pasting a connection command fills in the right protocol automatically. Shell Integration, 600+ completions, terminal highlighting, quick commands, port forwarding and a tmux toolbar.",
         points: [
-          "SSH / SFTP / Telnet / FTP / Serial",
+          "Windows WSL plus SSH / SFTP / Telnet / FTP / Serial",
           "600+ completions with subcommands",
-          "Terminal highlighting with custom rules",
+          "Shell Integration and clickable paths",
           "Tabs, splits and in-terminal port forwarding"
         ],
         image: "sug",

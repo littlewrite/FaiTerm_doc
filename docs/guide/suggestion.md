@@ -1,19 +1,37 @@
 
-# Command completion
+# Command Completion
 
-As you type part of a command, FaiTerm suggests likely completions.
+Start typing a command to see candidates. Once the command is complete, FaiTerm continues with its subcommands and arguments.
 
-After you enter a full command, it suggests subcommands and arguments.
+![Command completion](/images/screenshots/sug_light.png)
 
-The feature covers 600+ common commands, is enabled by default, and works in local shells and SSH sessions.
+- More than 600 common commands are included and completion is enabled by default.
+- Completion works in both local and SSH terminals.
+- Suggestions mix command definitions, aliases, history, and paths. History entries are labeled so you can tell where a candidate came from.
+- Path separators follow Windows or Unix conventions.
+- Results are streamed as they are computed instead of waiting for the full list.
 
-<img src="/images/screenshots/sug_dark.gif" width="600" alt="Command completion suggestions" />
+## Working directory
 
-> On Windows, completion works in **PowerShell**, **bash.exe**, and similar environments. **cmd.exe** is not supported.
+Shell Integration keeps completion aligned with the terminal's current directory. On supported local terminals, FaiTerm can also read the working directory from the system when the shell does not report it, including tmux and custom shell setups.
 
-> Over SSH, suggestion UI rendering depends on the network; it may feel slightly laggy.
+When **Trigger suggestions** is disabled, the completion popup is disabled as well.
 
-If you need to turn it off, use the setting shown below:
+## Request a suggestion
 
-<img src="/images/screenshots/off_auto_complete.png" width="500" alt="Disable auto completion in settings" />
+Press `⌘J` to request suggestions for the current input. You can change this shortcut in **Settings → Shortcuts**.
+
+Use `Tab` to accept a candidate, the arrow keys to navigate, and `Esc` to close the popup.
+
+## Platform notes
+
+> On Windows, PowerShell and `bash.exe` are supported. `cmd.exe` is not.
+
+> Over SSH, rendering speed depends on the network and may not feel immediate.
+
+## Disable completion
+
+Turn completion off in **Settings → Terminal** if it interferes with your workflow.
+
+![Disable completion](/images/screenshots/off_auto_complete.png)
 

@@ -4,8 +4,9 @@
 
 ### Install Manually
 
-- For 64-bit installation package, please download `Setup windows_x64 (.exe)`, and double-click to install after downloading.
-- For ARM64 installation package, please download `Setup windows_arm64 (.exe)`, and double-click to install after downloading.
+- Download `faiterm-{version}-windows-setup.exe` from the releases page and run it.
+
+Windows local terminals can run a normal shell or a WSL distribution. See [Connections and Hosts](/guide/ssh#local-terminal-and-wsl) for setup and path rules.
 
 ## macOS
 
@@ -16,8 +17,8 @@ After downloading, open the `.dmg` file and drag `FaiTerm.app` into the `Applica
 ::: danger Troubleshooting
 
 - Since the app is not yet Apple-signed, macOS may show one of the following prompts:
-  - `"FaiTerm" is damaged and can't be opened`
-  - `Cannot open "FaiTerm" because the developer cannot be verified`
+- `"FaiTerm" is damaged and can't be opened`
+- `"FaiTerm" cannot be opened because the developer cannot be verified`
 
 Use the following steps:
 
@@ -49,23 +50,22 @@ The first launch may still be blocked. Go to `System Settings -> Privacy & Secur
 
 ### Install Manually
 
-- For `deb` installation package, download `linux_amd64.deb (.deb)`
-- For `AppImage` package, download `linux_amd64.AppImage (.AppImage)`
+- For `deb`, download `faiterm-{version}-linux-amd64.deb`
+- For `AppImage`, download `faiterm-{version}-linux-amd64.AppImage`
 
 Install `deb` package using `apt-get`:
 ```bash
-sudo apt-get install ./faiterm_{version}_linux_amd64.deb
+sudo apt-get install ./faiterm-{version}-linux-amd64.deb
 ```
 
 Use `AppImage`:
 ```bash
-chmod u+x faiterm_{version}_linux_amd64.AppImage
-./faiterm_{version}_linux_amd64.AppImage
+chmod u+x faiterm-{version}-linux-amd64.AppImage
+./faiterm-{version}-linux-amd64.AppImage
 ```
 
 ## Android
 
 ### Install Manually
 
-- For the ARM64 package, download `android_arm64.apk (.apk)`
-- For the x86 package, download `android_x86_64.apk (.apk)`
+- For the ARM64 package, download `faiterm-{version}-android-arm64.apk`.

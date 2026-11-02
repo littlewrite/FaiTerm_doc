@@ -67,32 +67,58 @@ function sidebarChangelog(versions) {
 function sidebarUserGuide() {
     return [
         {
-            text: 'User Guide',
+            text: 'Getting Started',
             items: [
-                {
-                    text: 'Introduction',
-                    items: [
-                        { text: 'About FaiTerm', link: '/' },
-                        { text: 'Installation', link: '/installation' },
-                    ]
-                },
+                { text: 'About FaiTerm', link: '/' },
+                { text: 'Installation', link: '/installation' },
+                { text: 'Workspace', link: '/workspace' },
             ]
         },
         {
-            text: 'Usage and Configuration',
+            text: 'Connections and Files',
             items: [
-                { text: 'Suggestions', link: '/suggestion' },
-                { text: 'SSH', link: '/ssh' },
-                { text: 'AI', link: '/ai' },
-                { text: 'Note', link: '/note' },
-                { text: 'Theme', link: '/theme' },
-                { text: 'Shortcuts', link: '/shortcuts' },
+                { text: 'Connections and Hosts', link: '/ssh' },
+                { text: 'Files and Transfers', link: '/files' },
+                { text: 'Secrets', link: '/secrets' },
+                { text: 'Port Forwarding', link: '/port-forward' },
             ]
         },
         {
-            text: 'Other',
+            text: 'Terminal',
             items: [
-                { text: 'Q&A', link: '/faq' },
+                { text: 'Command Completion', link: '/suggestion' },
+                { text: 'Terminal Highlighting', link: '/highlight' },
+                { text: 'Quick Commands and History', link: '/quick-commands' },
+                { text: 'Notifications', link: '/notifications' },
+            ]
+        },
+        {
+            text: 'AI and Knowledge',
+            items: [
+                { text: 'AI Agent', link: '/ai' },
+                { text: 'Notebooks and Knowledge Base', link: '/note' },
+            ]
+        },
+        {
+            text: 'Hosts and Monitoring',
+            items: [
+                { text: 'Host Tools and Monitoring', link: '/host-tools' },
+            ]
+        },
+        {
+            text: 'Personalization and Account',
+            items: [
+                { text: 'Themes', link: '/theme' },
+                { text: 'Keyboard Shortcuts', link: '/shortcuts' },
+                { text: 'Personalization', link: '/custom-config' },
+                { text: 'Account and Sync', link: '/sync' },
+            ]
+        },
+        {
+            text: 'Mobile and Help',
+            items: [
+                { text: 'Mobile', link: '/mobile' },
+                { text: 'FAQ', link: '/faq' },
                 { text: 'Privacy Policy', link: '/privacy' }
             ]
         }

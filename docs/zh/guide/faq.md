@@ -63,6 +63,10 @@ sudo xattr -dr com.apple.quarantine /Applications/FaiTerm.app
 
 详见 [AI Agent](/zh/guide/ai)。
 
+## 为什么 WSL 终端在手机或 macOS 上打不开？
+
+WSL 当前只在 Windows 客户端提供终端能力。移动端和 macOS 可以查看桌面端配置好的 WSL 主机、发行版和路径，但打开终端时会明确提示需要在 Windows 上使用。详见 [连接与主机](/zh/guide/ssh#本地终端与-wsl)。
+
 ## 为什么 Docker 面板提示需要管理员权限？
 
 在 macOS 上通过 `docker` 命令行访问 Docker 需要 `sudo` 或者已经加入 `docker` 用户组；面板会把这个提示原样显示出来。你可以：
