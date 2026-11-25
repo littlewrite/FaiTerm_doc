@@ -6,16 +6,16 @@
     <language>en</language>
 
     <item>
-      <title>FaiTerm 1.0.10</title>
-      <sparkle:version>1.0.10</sparkle:version>
-      <sparkle:shortVersionString>1.0.10</sparkle:shortVersionString>
-      <pubDate>Mon, 02 Nov 2026 12:13:20 +0800</pubDate>
+      <title>FaiTerm 1.0.11</title>
+      <sparkle:version>1.0.11</sparkle:version>
+      <sparkle:shortVersionString>1.0.11</sparkle:shortVersionString>
+      <pubDate>Wed, 25 Nov 2026 21:19:51 +0800</pubDate>
       <enclosure
-        url="https://github.com/littlewrite/FaiTerm_doc/releases/download/v1.0.10/faiterm-1.0.10-macos-x86_64.dmg"
-        sparkle:edSignature="0pLtOdiju6iPKWibNGqecX2fSHkkX1TvJgzsEOkKae80gIrRIw3dQ9/XEChTE7v3OeqiULLOLJeLVxzqDGhYAA=="
+        url="https://github.com/littlewrite/FaiTerm_doc/releases/download/v1.0.11/faiterm-1.0.11-macos-x86_64.dmg"
+        sparkle:edSignature="718PiL9Qw0DpZqfD4uOaXRw/OQoj0/JkZjraXCeKT7DO4gRuSulCqyOqtQxo1t+pjEHjalj+AwSYKFUx/IQuBQ=="
         sparkle:os="macos"
         sparkle:arch="x86_64"
-        length="25319104"
+        length="25391393"
         type="application/octet-stream" />
     </item>
   </channel>
